@@ -1,0 +1,21 @@
+cabal-version:      2.4
+name:               wordle
+version:            0.1.0.0
+synopsis:           A simple Wordle solver
+homepage:           https://github.com/bacchanalia/wordle
+bug-reports:        https://github.com/bacchanalia/wordle/issues
+license:            AGPL-3.0-or-later
+license-file:       LICENSE
+author:             Mel Zuser
+maintainer:         mel@mzero.dev
+copyright:          Mel Zuser 2021
+category:           Game
+
+data-dir:           data
+data-files:         answerlist, guesslist, output
+
+executable wordle
+    main-is:          Main.hs
+    build-depends:    base ^>=4.14.3.0, containers, parallel
+    hs-source-dirs:   app
+    default-language: Haskell2010
