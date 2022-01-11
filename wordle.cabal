@@ -17,6 +17,7 @@ data-files:         answerlist, guesslist, output
 executable wordle
     main-is:          Main.hs
     ghc-options:      -O2 -threaded -rtsopts -with-rtsopts=-N4
+    ghc-options:      -Wall -Wno-name-shadowing -Wno-type-defaults -Wno-unused-top-binds
     build-depends:    base ^>=4.14.3.0
                     , bytestring
                     , cereal
